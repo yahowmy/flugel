@@ -17,7 +17,7 @@ func TestEc2InstanceProvisioning(t *testing.T) {
 	expectedName := fmt.Sprintf("terratest-aws-example-%s", random.UniqueId())
 	terraformOptions := &terraform.Options{
 		// The path to where our Terraform code is located
-		TerraformDir: "/",
+		TerraformDir: "flugel/",
 
 		// Variables to pass to our Terraform code using -var options
 		Vars: map[string]interface{}{
