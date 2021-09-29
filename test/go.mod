@@ -1,6 +1,6 @@
 module test
 
-go 1.17
+go 1.15
 
 require (
 	github.com/agext/levenshtein v1.2.1 // indirect
