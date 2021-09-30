@@ -2,7 +2,7 @@
    
 name: "Flugel Github Actions"
 
-on: [push]
+on: [pull_request]
 
 jobs:
   terraform_apply:
