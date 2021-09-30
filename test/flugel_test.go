@@ -14,7 +14,7 @@ func TestEc2InstanceProvisioning(t *testing.T) {
 	t.Parallel()
 	approvedRegions := []string{"us-east-1"}
 	awsRegion := aws.GetRandomRegion(t, approvedRegions, nil)
-	expectedName := fmt.Sprintf("terratest-aws-example-%s", random.UniqueId())
+	expectedName := fmt.Sprintf("Flugel-%s", random.UniqueId())
 	terraformOptions := &terraform.Options{
 		// The path to where our Terraform code is located
 		TerraformDir: "../",
