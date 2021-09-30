@@ -17,8 +17,8 @@ variable "region" {
 }
 
 variable "instance_name" {
-  description = "The name tag to set for the EC2 Instance."
-  default     = "testing-example-instance"
+  description = "Name Of The Instance"
+  default     = "Flugel"
 }
 
 variable "ami_id" {
