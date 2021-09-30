@@ -1,7 +1,6 @@
 provider "aws" {
     region = var.region
-    access-key = ${{ secrets.AWS_ACCESS_KEY_ID }}
-    secret-key = ${{ secrets.AWS_SECRET_ACCESS_KEY }}    
+    
 }
 
 resource "aws_instance" "flugel" {
