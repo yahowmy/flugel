@@ -16,7 +16,7 @@ resource "aws_instance" "flugel" {
 
 
 resource "aws_s3_bucket" "flugel" {
-    bucket = "flugel-bokt"
+    bucket = "flugel-bkt"
     tags = {
         Name = var.instance_name
         Owner = var.owner
