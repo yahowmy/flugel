@@ -21,7 +21,7 @@ variable "ami_id" {
 }
 
 variable "s3_name" {
-  description = "S3 Name Tag."
+  description = "S3 Name Tag"
   default     = "Flugel"
 }
 
