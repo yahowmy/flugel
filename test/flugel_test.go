@@ -16,7 +16,7 @@ func TestRecourcesProvisioning(f *testing.T) {
 	approvedRegions := []string{"us-east-1"}
 	awsRegion := aws.GetRandomRegion(f, approvedRegions, nil)
 	expectedNameEC2 := fmt.Sprintf("Flugel-%s", random.UniqueId())
-	expectedNameS3 := "flugel-bkt"
+	expectedNameS3 := fmt.Sprintf("Flugel-%s", random.UniqueId())
 	terraformOptions := &terraform.Options{
 		// The Path To Terrafom Code
 		TerraformDir: "../",
