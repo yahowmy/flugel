@@ -1,6 +1,6 @@
 
 variable "owner" {
-  description = "Name Of The owner"
+  description = "Name Of The owner."
   type        = string
   default     = "InfraTeam"
 }
