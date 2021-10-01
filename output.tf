@@ -7,6 +7,6 @@ output "instance_private_ip" {
 }
 
 output "bucket_id" {
-  value = "${aws_s3_bucket.flugel_s3.tags.Name}"
+  value = "${aws_s3_bucket.flugel_s3.id}"
 }
 
